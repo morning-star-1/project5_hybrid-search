@@ -1,0 +1,182 @@
+[
+  {
+    "id": "d1",
+    "title": "Intro to Ranking in Search",
+    "text": "Learning to rank improves search result ordering using features, labels, and objective functions like NDCG. Ranking models combine relevance signals and user behavior.",
+    "tags": ["ranking", "search", "information retrieval"]
+  },
+  {
+    "id": "d2",
+    "title": "BM25 Explained Simply",
+    "text": "BM25 is a bag-of-words ranking function based on term frequency, inverse document frequency, and document length normalization. It is a strong baseline for lexical retrieval.",
+    "tags": ["bm25", "retrieval", "search"]
+  },
+  {
+    "id": "d3",
+    "title": "TF-IDF Basics",
+    "text": "TF-IDF weights terms by frequency in a document and rarity across documents. It is often used for document vectors, similarity search, and classic information retrieval.",
+    "tags": ["tfidf", "retrieval", "information retrieval"]
+  },
+  {
+    "id": "d4",
+    "title": "Inverted Index Data Structure",
+    "text": "An inverted index maps each token to a postings list of documents containing it. This structure supports fast candidate retrieval for search queries.",
+    "tags": ["indexing", "search", "systems"]
+  },
+  {
+    "id": "d5",
+    "title": "Query Tokenization",
+    "text": "Tokenization turns text into tokens using lowercasing and splitting on non-letters. A consistent tokenizer is critical for matching query terms to indexed terms.",
+    "tags": ["tokenization", "nlp", "search"]
+  },
+  {
+    "id": "d6",
+    "title": "Stopwords and Why They Matter",
+    "text": "Stopwords are common words like the and is that may not carry meaning. Removing stopwords can reduce index size but may hurt phrase-like queries.",
+    "tags": ["nlp", "tokenization", "information retrieval"]
+  },
+  {
+    "id": "d7",
+    "title": "Re-ranking in Two-Stage Retrieval",
+    "text": "Two-stage retrieval first retrieves candidates with BM25, then re-ranks using stronger features such as embeddings, personalization signals, or learning to rank models.",
+    "tags": ["reranking", "ranking", "retrieval"]
+  },
+  {
+    "id": "d8",
+    "title": "Personalization with User Interests",
+    "text": "Personalized ranking reorders results based on user interests. A simple approach is tag overlap between user profile tags and document tags.",
+    "tags": ["personalization", "ranking", "recommendation"]
+  },
+  {
+    "id": "d9",
+    "title": "User Profiles from Liked Documents",
+    "text": "A user profile can be built from liked documents by aggregating their tags or averaging their TF-IDF vectors. This profile captures user preferences over topics.",
+    "tags": ["personalization", "user profile", "recommendation"]
+  },
+  {
+    "id": "d10",
+    "title": "Cosine Similarity for Text Vectors",
+    "text": "Cosine similarity measures the angle between two vectors and is commonly used to compare TF-IDF or embedding vectors in information retrieval and recommendation.",
+    "tags": ["cosine similarity", "nlp", "embeddings"]
+  },
+  {
+    "id": "d11",
+    "title": "Embeddings 101",
+    "text": "Embeddings represent text as dense vectors that capture semantic meaning. They help retrieve relevant documents even when the exact query words do not match.",
+    "tags": ["embeddings", "nlp", "semantic search"]
+  },
+  {
+    "id": "d12",
+    "title": "Semantic Search vs Lexical Search",
+    "text": "Lexical search matches exact terms using BM25, while semantic search uses embeddings to match meaning. Hybrid systems often combine both for best results.",
+    "tags": ["semantic search", "bm25", "embeddings"]
+  },
+  {
+    "id": "d13",
+    "title": "Hybrid Search Score Fusion",
+    "text": "Hybrid search combines a lexical score like BM25 with a personal or semantic score. A common approach is linear interpolation with a tunable alpha parameter.",
+    "tags": ["hybrid search", "reranking", "systems"]
+  },
+  {
+    "id": "d14",
+    "title": "NDCG for Ranking Evaluation",
+    "text": "NDCG evaluates ranked lists using graded relevance. It rewards putting highly relevant documents near the top, which is important for learning to rank.",
+    "tags": ["ranking", "evaluation", "ndcg"]
+  },
+  {
+    "id": "d15",
+    "title": "Precision and Recall in Retrieval",
+    "text": "Precision measures how many retrieved documents are relevant, and recall measures how many relevant documents were retrieved. Both are core metrics in retrieval.",
+    "tags": ["evaluation", "retrieval", "information retrieval"]
+  },
+  {
+    "id": "d16",
+    "title": "Building a Search API",
+    "text": "A search API typically accepts a query, runs candidate retrieval over an index, and returns ranked results with titles and snippets for display in an app.",
+    "tags": ["systems", "search", "api"]
+  },
+  {
+    "id": "d17",
+    "title": "Result Snippets for Explainability",
+    "text": "Snippets highlight matching query terms in the document text. They improve explainability and help users understand why a result was returned.",
+    "tags": ["explainability", "search", "ui"]
+  },
+  {
+    "id": "d18",
+    "title": "Tagging Documents for Topics",
+    "text": "Tags provide structured metadata about topics like ranking, embeddings, or databases. Tags enable quick personalization and filtering in search systems.",
+    "tags": ["metadata", "personalization", "systems"]
+  },
+  {
+    "id": "d19",
+    "title": "Recommendation vs Search",
+    "text": "Search is query-driven, while recommendation is user-driven. Many products use hybrid approaches where search results can be personalized by user preferences.",
+    "tags": ["recommendation", "personalization", "search"]
+  },
+  {
+    "id": "d20",
+    "title": "Collaborative Filtering Overview",
+    "text": "Collaborative filtering recommends items based on similar users or similar items. It is a classic recommendation technique and can complement content-based methods.",
+    "tags": ["recommendation", "collaborative filtering", "systems"]
+  },
+  {
+    "id": "d21",
+    "title": "Content-Based Recommendation",
+    "text": "Content-based recommendation uses item features like text and tags to recommend similar items. User profiles can be built from liked items and compared with cosine similarity.",
+    "tags": ["recommendation", "user profile", "cosine similarity"]
+  },
+  {
+    "id": "d22",
+    "title": "Feature Engineering for Ranking",
+    "text": "Ranking features include BM25 score, term overlap, freshness, popularity, and personalization matches. Learning to rank models combine these features into a final score.",
+    "tags": ["ranking", "features", "learning to rank"]
+  },
+  {
+    "id": "d23",
+    "title": "A/B Testing Ranking Changes",
+    "text": "A/B tests measure whether ranking changes improve click-through rate or satisfaction. Offline metrics like NDCG may not fully predict online outcomes.",
+    "tags": ["evaluation", "ab testing", "systems"]
+  },
+  {
+    "id": "d24",
+    "title": "Caching Search Results",
+    "text": "Caching can speed up repeated queries and reduce compute. Common strategies include caching top results and caching partial scoring computations.",
+    "tags": ["systems", "performance", "search"]
+  },
+  {
+    "id": "d25",
+    "title": "Handling Typos with Fuzzy Matching",
+    "text": "Fuzzy matching and edit distance can handle typos in queries. Practical systems often use spell correction before retrieval to improve recall.",
+    "tags": ["nlp", "search", "typos"]
+  },
+  {
+    "id": "d26",
+    "title": "Synonyms and Query Expansion",
+    "text": "Query expansion adds related terms such as synonyms to improve recall. It can be used with BM25 and with semantic search embeddings.",
+    "tags": ["search", "information retrieval", "nlp"]
+  },
+  {
+    "id": "d27",
+    "title": "Cold Start in Personalization",
+    "text": "Cold start happens when a user has little history. Simple onboarding with topic tags can create an initial user profile for personalization.",
+    "tags": ["personalization", "cold start", "recommendation"]
+  },
+  {
+    "id": "d28",
+    "title": "Vector Databases in Practice",
+    "text": "Vector databases store embeddings and support nearest neighbor search for semantic retrieval. They are often used alongside BM25 for hybrid retrieval.",
+    "tags": ["embeddings", "vector database", "semantic search"]
+  },
+  {
+    "id": "d29",
+    "title": "Approximate Nearest Neighbor Search",
+    "text": "Approximate nearest neighbor methods speed up vector search by using indexing structures. ANN helps scale semantic retrieval to large corpora.",
+    "tags": ["semantic search", "ann", "systems"]
+  },
+  {
+    "id": "d30",
+    "title": "Putting It All Together: A Two-Stage Pipeline",
+    "text": "A practical pipeline retrieves candidates with BM25 over an inverted index, then re-ranks using a user-interest score or cosine similarity to a user profile vector.",
+    "tags": ["hybrid search", "personalization", "reranking"]
+  }
+]
